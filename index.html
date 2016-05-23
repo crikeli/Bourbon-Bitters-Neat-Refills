@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bourbon</title>
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="javascript:void(0)" class="logo">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/49db8c0f2f8066c2c3a275781503fe3303a1a9fc/source/images/placeholder.png" alt="Logo Image">
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        <li class="nav-link"><a href="javascript:void(0)">Products</a></li>
+        <li class="nav-link"><a href="javascript:void(0)">About Us</a></li>
+        <li class="nav-link"><a href="javascript:void(0)">Contact</a></li>
+        <li id="js-navigation-more" class="nav-link more"><a href="javascript:void(0)">More</a>
+          <ul class="submenu">
+            <li><a href="javascript:void(0)">Submenu Item</a></li>
+            <li><a href="javascript:void(0)">Another Item</a></li>
+            <li class="more"><a href="javascript:void(0)">Item with submenu</a>
+              <ul class="submenu">
+                <li><a href="javascript:void(0)">Sub-submenu Item</a></li>
+                <li><a href="javascript:void(0)">Another Item</a></li>
+              </ul>
+            </li>
+            <li class="more"><a href="javascript:void(0)">Another submenu</a>
+              <ul class="submenu">
+                <li><a href="javascript:void(0)">Sub-submenu</a></li>
+                <li><a href="javascript:void(0)">An Item</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="navigation-tools">
+      <div class="search-bar">
+        <form role="search">
+          <input type="search" placeholder="Enter Search" />
+          <button type="submit">
+            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png" alt="Search Icon">
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<div class="device-background">
+  <div class="device-text">
+    <h4>Text about App or Device</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, recusandae? Deserunt repellendus.</p>
+  </div>
+  <div class="device">
+    <div class="screen"></div>
+  </div>
+</div>
+
+
+<ul class="bullets">
+  <li class="bullet">
+    <div class="bullet-icon bullet-icon-1">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/49db8c0f2f8066c2c3a275781503fe3303a1a9fc/source/images/placeholder.png" alt="">
+    </div>
+    <div class="bullet-content">
+      <h2>This Bullet Title</h2>
+      <p>Lorem dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
+      </div>
+  </li>  
+  <li class="bullet">
+    <div class="bullet-icon bullet-icon-2">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/49db8c0f2f8066c2c3a275781503fe3303a1a9fc/source/images/placeholder.png" alt="">
+    </div>
+    <div class="bullet-content">
+      <h2>Another Bullet Title</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum.</p>
+    </div>
+  </li>
+  <li class="bullet">
+    <div class="bullet-icon bullet-icon-3">
+      <img src="https://raw.githubusercontent.com/thoughtbot/refills/49db8c0f2f8066c2c3a275781503fe3303a1a9fc/source/images/placeholder.png" alt="">
+    </div>
+    <div class="bullet-content">
+      <h2>Last Bullet Title</h2>
+      <p>Lorem ipsum sit amet consectetur adipisicing elit. Doloremque, minus, blanditiis, voluptatibus nulla quia ipsam sequi quos iusto aliquam iste magnam accusamus molestias quo illum impedit. Odit officia autem.</p>
+    </div>
+  </li> 
+</ul>
+
+<div id="map_canvas"></div>
+
+
+<footer class="footer-2" role="contentinfo">
+  <div class="footer-logo">
+    <img src="https://raw.githubusercontent.com/thoughtbot/refills/49db8c0f2f8066c2c3a275781503fe3303a1a9fc/source/images/placeholder.png" alt="Logo image">
+  </div>
+    <ul>
+      <li><a href="javascript:void(0)">About</a></li>
+      <li><a href="javascript:void(0)">Contact</a></li>
+      <li><a href="javascript:void(0)">Products</a></li>
+    </ul>
+
+    <div class="footer-secondary-links">
+      <ul>
+        <li><a href="javascript:void(0)">Terms and Conditions</a></li>
+        <li><a href="javascript:void(0)">Privacy Policy</a></li>
+      </ul>
+
+      <ul class="footer-social">
+        <li><a href="javascript:void(0)">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="Facebook">
+          </a></li>
+        <li><a href="javascript:void(0)">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="Twitter">
+        </a></li>
+        <li><a href="javascript:void(0)">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/youtube-logo-circle.png" alt="YouTube">
+        </a></li>
+      </ul>
+    </div>
+</footer>
+
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+  var bittersMap = (function () {
+    var myLatlng = new google.maps.LatLng(47.6062, -122.3321),
+        mapCenter = new google.maps.LatLng(47.6062, -122.3321),
+        mapCanvas = document.getElementById('map_canvas'),
+        mapOptions = {
+          center: mapCenter,
+          zoom: 13,
+          scrollwheel: false,
+          draggable: true,
+          disableDefaultUI: true,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        },
+        map = new google.maps.Map(mapCanvas, mapOptions),
+        contentString =
+          '<div id="content">'+
+          '<div id="siteNotice">'+
+          '</div>'+
+          '<h1 id="firstHeading" class="firstHeading">thoughtbot</h1>'+
+          '<div id="bodyContent"'+
+          '<p>Sveavägen 98</p>'+
+          '</div>'+
+          '</div>',
+        infowindow = new google.maps.InfoWindow({
+          content: contentString,
+          maxWidth: 300
+        }),
+        marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'Seattle'
+        });
+
+    return {
+      init: function () {
+        map.set('styles', [{
+          featureType: 'landscape',
+          elementType: 'geometry',
+          stylers: [
+            { hue: '#ffff00' },
+            { saturation: 30 },
+            { lightness: 10}
+          ]}
+        ]);
+
+        google.maps.event.addListener(marker, 'click', function () {
+          infowindow.open(map,marker);
+        });
+      }
+    };
+  }());
+
+  bittersMap.init();
+</script>
+</body>
+</html>
